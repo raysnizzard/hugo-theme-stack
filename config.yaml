@@ -3,12 +3,14 @@ module:
         extended: true
         min: "0.87.0"
 
+
 params:
+    description: 记录一些个人在交易中的实践与思考。
     mainSections:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon:
+    favicon: /favicon.ico
 
     footer:
         since:

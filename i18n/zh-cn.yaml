@@ -2,7 +2,7 @@ toggleMenu:
     other: 切换菜单
 
 darkMode:
-    other: 暗色模式
+    other: 深色模式
 
 list:
     page: "{{ .Count }} 个页面"
@@ -43,7 +43,7 @@ widget:
 
     tagCloud:
         title:
-            other: 标签云
+            other: 标签
 
     categoriesCloud:
         title:
