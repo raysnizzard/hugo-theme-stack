@@ -57,7 +57,7 @@ search:
         other: 输入关键词...
 
     resultTitle:
-        other: "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
+        other: "找到 #PAGES_COUNT 个结果"
 
 footer:
     builtWith:
