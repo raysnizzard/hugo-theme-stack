@@ -32,19 +32,29 @@
             <div>
                 {{ partial "helper/icon" "date" }}
                 <time class="article-time--published">
-                    {{- .Date.Format (or .Site.Params.dateFormat.published "Jan 02, 2006") -}}
+                    发布于&nbsp; {{- .Date.Format (or .Site.Params.dateFormat.published "Jan 02, 2006") -}}
                 </time>
             </div>
         {{ end }}
+        
+        {{- if ne .Lastmod .Date -}}
+        <section class="article-lastmod-head">
+            <!-- {{ partial "helper/icon" "clock" }} -->
+            <span>
+                {{ T "article.lastUpdatedOn" }} {{ .Lastmod.Format ( or .Site.Params.dateFormat.lastUpdated "Jan 02, 2006 15:04 MST" ) }}
+            </span>
+        </section>
+        {{- end -}}
 
-        {{ if $showReadingTime }}
+
+        <!-- {{ if $showReadingTime }}
             <div>
                 {{ partial "helper/icon" "clock" }}
                 <time class="article-time--reading">
                     {{ T "article.readingTime" .ReadingTime }}
                 </time>
             </div>
-        {{ end }}
+        {{ end }} -->
     </footer>
     {{ end }}
 

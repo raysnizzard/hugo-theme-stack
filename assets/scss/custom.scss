@@ -1,1 +1,8 @@
 /* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+
+.article-lastmod-head {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.4rem;
+}
